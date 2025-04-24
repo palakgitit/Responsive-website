@@ -576,26 +576,18 @@ border:  dotted 1px #282613;
 }
 
 /*  green section  */
-
-
-
-.green-sec{
-
+.green-sec .container{
   background-color: var(--primary-color);
   margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -60px;
   padding-top: 100px;
   border-radius: 60px;
-  height: auto;
   position: relative;
-  
+  height: auto;
 }
-
-
 .green-btn{
-
   position: absolute;
   bottom: -20px;
   left: 46%;
@@ -610,13 +602,11 @@ border:  dotted 1px #282613;
 }
 
 .green-box{
-
   display: flex;
   flex-wrap: wrap;
 }
 
 .g-box{
-
   height: 320px;
   width: auto;
   background-color: var(--t-section);
@@ -640,7 +630,6 @@ border:  dotted 1px #282613;
   border-radius: 40px;
 }
 .g-title {
-  
   text-align: center;
   font-family: var(--secondary-font);
   padding-bottom: 60px;
@@ -707,6 +696,7 @@ border:  dotted 1px #282613;
 .service-title{
 
   font-family: var(--main-font);
+  text-align: left ;
 }
 
 .service-title span{
@@ -777,16 +767,15 @@ border:  dotted 1px #282613;
 }
 
 .ser-btn .icon-ser{
-
   font-size: 25px;
 }
 
 .main-ser-con h4{
-
   font-size: 23px;
   font-weight: 400;
   margin-bottom: 30px;
 }
+
 .ser-btn i {
   color: #c5e395;
   transform: translate(100px );
@@ -795,24 +784,25 @@ border:  dotted 1px #282613;
 /*  review -section  */
 
 .review-section{
-
   margin-top: 70px;
   margin-bottom: 50px;
-}
-.review-title{
 
-  margin-top: 20px;
-  text-align: center;
- 
 }
 .review-section .container{
+  position: relative;
+ 
+}
 
+.review-title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.review-section .container{
   background-color: #FFFFFF;
 }
 
-
 .review-section .row{
-
   margin: 0;
   padding: 30px;
   width: auto;
@@ -831,7 +821,6 @@ border:  dotted 1px #282613;
   margin-left: 25px;
   margin-right: 25px;
 }
-
 .white-review-box{
   margin: 10px;
   padding: 40px;
@@ -843,24 +832,26 @@ border:  dotted 1px #282613;
   position: relative;
 }
 
+.review-box{
+  position: relative;
+  
+}
 .review-profile{
   position: absolute;
-  top: 215px;
-  left: 100px;
+  top: 50px;
+  left: 60px;
 }   
 
 .review-profile p {
   font-size: 14px;
 }
 .review-profile span{
-
   font-size: 12px;
   color: #666666;
   font-weight: 400;
 }
 
 .review-pic-bg{
-
   position: absolute;
   width: 50px;
   height: 50px;
@@ -871,15 +862,12 @@ border:  dotted 1px #282613;
 }
 
 .review-pic-bg img{
-
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  
 }
 
 .review-next  {
-
   position: absolute;
   width: 100px;
   height: 100px;
@@ -887,7 +875,6 @@ border:  dotted 1px #282613;
   margin-top: 30px;
   left: 550px;
   top: 330px;
-  
 }
 
 .review-dot{
@@ -899,7 +886,6 @@ border:  dotted 1px #282613;
 }
 
 .rd-black{
-
   background-color: #626260;
 }
 
@@ -908,11 +894,12 @@ border:  dotted 1px #282613;
 }
 
 .review-dot:hover{
-
   background-color: #000000;
 }
 
 /*  white rating box  */
+
+
 .rating-main{
   position: absolute;
   margin: 10px;
@@ -922,10 +909,9 @@ border:  dotted 1px #282613;
   padding: 30px;
   transform: translateX(65px);
   border-radius: 50px;
-  
 }
-.white-rating img{
 
+.white-rating img{
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -936,32 +922,25 @@ border:  dotted 1px #282613;
   position: relative;
   display: flex;
 }
-.rating-con{
 
+.rating-con{
   position: absolute;
   left: 100px;
   font-size: 12px;
   font-weight: 300;
-
 }
 
-
-/*   arrow and hovers  */
-.review-arr{
-
+.right-arr , .left-arr{
+  transition: all 0.5s;
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 35px;
   padding: 15px;
   background-color: #ffffff;
-  transition: all 0.5s;
-  transform: translate(0px,120px);
 }
 
-
-.review-arr i{
-
+.left-arr i , .right-arr i{
   color: #666666;
   font-size: 18px;
   font-weight: 600;
@@ -969,17 +948,17 @@ border:  dotted 1px #282613;
   transition: all 0.2s;
 }
 
-.review-arr:hover i{
 
-  color: #3ca200;
-}
-
-.review-arr:hover{
-
+.left-arr:hover , .right-arr:hover{
   background-color: #E8F5D3;
-
 }
 
+.left-arr:hover i , .right-arr:hover i{
+  color: #3ca200;
+ 
+}
+
+/*  end of white box setting  */
 
 
 /* form-section   */
@@ -995,56 +974,70 @@ border:  dotted 1px #282613;
 
 } */
 
-.form-section .container{
+.form-holder{
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.form-section .container{
   background-color: var(--bg-color);
   margin-top: 30px;
 }
 
 .form-title{
-
   width: auto;
+  font-family: var(--main-font);
   transform: translate(10px);
 }
-.form-items{
 
-  width: 1340px;
+.form-main{
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.form-title span{
+
+  font-family: var(--main-font);
+}
+.form-items{
+  width: 1320px;
   display: flex;
   height: 900px;
   margin: 10px;
 }
 
 .form-fill{
-
   position: relative;
   padding: 50px;
-  width: 700px;
+  width: 100%;
   height: 765px;
   border-radius: 40px;
   background-image: linear-gradient(#F1DB1C,#E9F2BF ,#E8F5D3);
 }
 
 .form-content form{
-
-  width: 550px;
+  width: 100%;
   height: 300px;
 }
 
 .form-class{
-
   width: 550px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .bucket{
-
   width: 450px;
   display: flex;
   justify-content: space-between;
 }
 .form-content label {
-
   font-size:14px;
   font-weight: 400;
   margin-top: 10px;
@@ -1054,73 +1047,88 @@ border:  dotted 1px #282613;
 }
 
 .form-content ::placeholder{
-
   font-size: 14px;
   font-family: var(--webfont);
   font-weight: 500;
   letter-spacing: 2px;
 }
 .form-content select{
-
   border-radius: 10px;
   margin-top: 10px;
   margin-left: 10px;
   display: block;
+  border-color:transparent;
   font-weight: 500;
+  font-family: var(--secondary-font);
   font-size: 16px;
   height: 40px;
+  transition: all 0.5s;
   width: 530px;
 }
-.form-content #submit  {
 
+.form-content select:hover{
+  background-color: rgb(241, 255, 224);
+  color:var(--primary-color);
+  outline: none;
+}
+
+.form-content #submit  {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #000000;
   color: #ffffff;
-  border-color:black;
+  transition: all 0.5s;
+  font-family: var(--main-font);
   margin-top: 40px;
-  
+}
+
+.form-content #submit:hover{
+  background-color: white;
+  color:#3ca200;
+  outline: none;
 }
 
 .form-content span{
-
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 5px;
-  
+  font-family: var(--secondary-font);
+}
+
+.form-content ::placeholder{
+
+  letter-spacing: 0px;
+}
+.form-content ::placeholder , label {
+  font-family: var(--secondary-font);
 }
 .form-content .form-p{
-
   display: inline-block;
 }
 .form-content input{
-
   width: 260px;
   margin-right:40px;
   margin-top: 10px;
   height: 40px;
   background-color: #ffffff;
-  border-color: rgb(243, 243, 243);
-  border-radius: 7px;
-}
-.form-img-con{
-  margin-left: 60px;
+  font-family: var(--secondary-font);
+  border-color:transparent;
+  border-radius: 5px;
 }
 
 .form-img img{
-
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  margin: 10px;
+  height: auto;
   border-radius: 30px;
   margin-bottom: 30px;
 }
 
 .company-review{
-
     margin-top: 30px;
-    width: 600px;
+    width: auto;
     height:300px;
     background-color: #F4F6F0;
     background-image: url(../img/form/leaf.png);
@@ -1132,7 +1140,6 @@ border:  dotted 1px #282613;
 }
 
 .company-review .f-content1{
-
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
@@ -1143,12 +1150,12 @@ border:  dotted 1px #282613;
 
 
 
+
 /*  the FAQ section  */
 
 
 
 .FAQ-sec .container{
-
   background-color: transparent;
   padding-top: 50px;
   padding-left: 50px;
@@ -1165,7 +1172,6 @@ border:  dotted 1px #282613;
   left:10px
 } */
 .FAQ-sec .container h2{
-
   font-size: 40px;
   /* columns: 2; */
   letter-spacing: 0.9px;
@@ -1173,7 +1179,6 @@ border:  dotted 1px #282613;
 
 .service-c
 {
-
   background-color: #E8F5D3;
   font-size: 20px;
   padding: 50px;
@@ -1184,25 +1189,20 @@ border:  dotted 1px #282613;
 }
 
 .service-c ul li {
-
   margin-top: 25px;
   margin-left: 0;
   font-size: 15px;
 }
 
 .FAQ-sec .container .quebox:hover .whitebg{
-
     background-color: rgb(248, 248, 248);
 }
 .que4{
-
   padding: 20px;
   margin-top: 20px;
-  
 }
 
 .quebox{
-
   background-color: #F4F6F0;
   border-radius: 30px;
   padding: 30px;
@@ -1214,7 +1214,6 @@ border:  dotted 1px #282613;
 }
 
 .whitebg{
-  
   position: absolute;
   background-color: var(--bg-color);
   padding: 5px;
@@ -1227,7 +1226,6 @@ border:  dotted 1px #282613;
 }
 
 .whitebg i{
-
   padding: 11.5px
 }
 
@@ -1243,44 +1241,36 @@ border:  dotted 1px #282613;
 }
 
 .blog-section .container{
-
   background-color: #F5F7F1;
   border-radius: 40px;
   padding: 10px;
   /* display: flex; */
   align-items: center;
   /* margin: 20px; */
-  
 }
 
 .blog-btn {
-
   /* left: 100%; */
   display: inline-block;
 }
 
 .blog-title{
-  
-  
   margin-left: 30px;
   margin-top: 30px;
   padding: 10px;  
 }
 .blog-box{
-
   width: 400px;
   height: 400px;
   margin: 0;
   
 }
 .blog-box img {
-
   width: 400px;
   height: 250px;
   border-radius: 50px;
 }
 .blog-box span {
-
   display: block;
   margin-top: 10px;
   color: #3ca200;
@@ -1290,19 +1280,16 @@ border:  dotted 1px #282613;
 }
 
 .blog-box h4{
-
   font-size: 20px;
   font-weight: 400;
   transition: all 0.5s;
   width: 300px;
 }
 .blog-box h4:hover{
-
   color: #3ca200;
 }
 
 .blog-section ul{
-
   position: absolute;
   bottom: 30px;
   left: 600px;
@@ -1313,7 +1300,6 @@ border:  dotted 1px #282613;
 /*  footer section */
 
 .footer-section{
-
   z-index: 3;
   position: relative;
   background-image: linear-gradient(#E8F5D3,#EAF6D8,#F7FCEF);
@@ -1327,7 +1313,6 @@ border:  dotted 1px #282613;
 
 
 .footer-section .f-img-1{
-
   position: absolute;
   /* left: 480px; */
   /* top: 40px; */
@@ -1337,7 +1322,6 @@ border:  dotted 1px #282613;
 }
 
 .footer-section .f-img-2{
-
   position: absolute;
   /* left: 480px; */
   /* top: 40px; */
@@ -1347,19 +1331,15 @@ border:  dotted 1px #282613;
 }
 
 .footer-section .container{
-
   /* background-image: linear-gradient(#E8F5D3,#EAF6D8,#F7FCEF); */
   background-color: transparent;
   border-radius: 50px;
   padding: 10px;
   display: flex;
   align-items: center;
-  
-
 }
 
 .footer-title{
-
   width: 500px;
   padding: 20px;
   margin: 40px;
@@ -1367,18 +1347,15 @@ border:  dotted 1px #282613;
 }
 
 .footer-title span{
-
   font-size: 30px;
   font-weight: 400;
 }
 
 .footer-section .footer-btn{
-
   margin-left: 55px;
 }
 
 .email-footer{
-
   position: absolute;
   right: 30px;
   top: 150px;
